@@ -1,0 +1,427 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url(fonts/tenby-five.otf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/exo/exo-regular.otf);
+}
+
+@font-face {
+    font-family: paragraph;
+    src: url(fonts/andada/Andada-Regular.ttf);
+}
+
+@font-face {
+    font-family: project;
+    src: url(fonts/playfair-display/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: position;
+    src: url(fonts/dosis/Dosis-Regular.otf);
+}
+
+div {
+	display: block;
+}
+
+.front-cover {
+	background: url(images/Russia3.jpg) no-repeat center center fixed;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.cover-container {
+	float: left;
+	width: 400px; 
+	margin: 0 auto; 
+	margin-top: 40px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.cover-container h1 {
+	font-family: position;
+	font-size: 35px;
+	font-weight: lighter;
+}
+
+.cover-container h2 {
+	font-family: subtitle;
+	font-weight: bolder;
+	font-size: 23px;
+	margin-top: 15px;
+}
+
+.cover-container ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.cover-container ul li:hover {
+	display: inline-block;
+}
+
+.about-cover {
+	background-color: #f2f2f2;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.about-container { 
+	text-align: center;
+	width: 668px;
+    margin: 0 auto;
+}
+
+.about-container h1 {
+	font-family: position;
+	font-size: 35px;
+	padding-top: 40px;
+}
+
+.about-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	padding-top: 30px;
+	line-height: 30px; 
+	
+}
+
+.nutripad-cover {
+	background-color: #4a87ee;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nutripad-container { 
+	width: 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.nutripad-container h1{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.nutripad-container h1:hover{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.nutripad-container h3 {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+}
+
+.nutripad-container h3:hover {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.nutripad-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+.nutripad-container ul li {
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#nutripad-phone {
+	width: 200px;
+}
+
+.typehavior-cover {
+	background-color: #BAFBD6;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.typehavior-container { 
+	width: 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.typehavior-container h1{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.typehavior-container h1:hover{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.typehavior-container h3 {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+}
+
+.typehavior-container h3:hover {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.typehavior-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+#typehavior-phone {
+	margin: 40px;
+	width: 150px;
+}
+
+.ideate-cover {
+	background-color: #008AD1;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ideate-container { 
+	width: 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.ideate-container h1{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.ideate-container h1:hover{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.ideate-container h3 {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+}
+
+.ideate-container h3:hover {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+
+.ideate-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+#ideate-laptop {
+	margin: 40px;
+	width: 600px;
+	height: 100%;
+}
+
+.uclimate-cover {
+	background-color: #377CF0;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.uclimate-container { 
+	width: 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.uclimate-container h1{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.uclimate-container h1:hover { 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.uclimate-container h3 {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+}
+
+.uclimate-container h3:hover {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.uclimate-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+.uclimate-container ul li {
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#uclimate-phone {
+	width: 200px;
+}
+
+.mmc-cover {
+	background-color: #00B4FF;
+	height: 650px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mmc-container { 
+	width: 100%; 
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.mmc-container h1{ 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.mmc-container h1:hover { 
+	font-family: position;
+	font-weight: lighter;
+	font-size: 40px;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.mmc-container h3 {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+}
+
+.mmc-container h3:hover {
+	font-family: position;
+	font-size: 27px;
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.mmc-container p {
+	font-family: paragraph;
+	font-size: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+#mmc-laptop {
+	margin: 40px;
+	width: 600px;
+	height: 100%;
+}
