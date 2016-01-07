@@ -557,25 +557,25 @@ a {
 }
 #mmc-laptop {
 	margin: 20px;
-	width: 375px;
+	width: 300px;
 	height: 100%;
 }
 .mmc-cover {
-	height: 700px;
+	height: 800px;
 }
 .nutripad-cover {
-	height: 1650px;
+	height: 1750px;
 }
 .uclimate-cover {
-	height: 1650px;
+	height: 1750px;
 }
 #ideate-laptop { 
 	margin: 20px;
-	width: 375px;
+	width: 300px;
 	height: 100%;
 }
 .ideate-cover {
-	height: 700px;
+	height: 800px;
 }
 .typehavior-cover {
 	height: 900px;
