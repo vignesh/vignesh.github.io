@@ -502,7 +502,7 @@ a {
 
 }
 
-@media (max-width: 608px) {
+@media (max-width: 620px) {
 .about-container { 
 	text-align: center;
 	width: 400px;
@@ -542,7 +542,7 @@ a {
 }
 }
 
-@media (max-width: 404px) {
+@media (max-width: 420px) {
 .about-container { 
 	text-align: center;
 	width: 300px;
