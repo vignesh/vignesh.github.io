@@ -151,6 +151,15 @@ a {
  }
 
 
+@media (min-height: 750px) {
+	.landing-page {
+		height: 700px;
+	}
+	.col {
+		height: 300px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.landing-picture img {
 		margin-left: 0px;
