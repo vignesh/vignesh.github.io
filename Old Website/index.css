@@ -1,0 +1,279 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/exo/Exo-Regular.otf);
+}
+
+@font-face {
+    font-family: project;
+    src: url(fonts/playfair-display/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: position;
+    src: url(fonts/dosis/Dosis-Regular.otf);
+}
+
+div {
+	display: block;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.landing-page {
+	background: #455a64; 
+	height: 550px;
+	width: 100%;
+	margin-top: 0px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.landing-picture img {
+	border-radius: 20px;
+    margin: 50px;
+    margin-left: 250px;
+    max-width: 300px; 
+    max-height: 500px;
+}
+
+.row-container {
+	width : 100%;
+    max-width : 1200px; 
+}
+
+.split-1 {
+	float: left;
+    min-height: 1px; 
+    width: 50%; 
+    height: 500px;
+    text-align: center;
+    background: #455a64; 
+}
+
+.split-2 {
+	float: left;
+    min-height: 1px; 
+    width: 50%; 
+    height: 500px;
+    text-align: center;
+    background: #455a64; 
+}
+
+#name {
+	font-family: title;
+	font-weight: lighter;
+	font-size: 45px;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	margin-left: -50px; 
+}
+
+#description {
+	font-family: project;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+	margin: 60px;
+	margin-top: 50px;
+}
+
+#description a {
+	font-weight: bolder;
+	font-size: 23px;
+}
+
+.col {
+    float: left;
+    min-height: 1px; 
+    width: 16.66%; 
+    height: 200px;
+    text-align: center;
+    font-family: position;
+    font-weight: lighter;
+    color: white;
+    background-color: #455a64;
+ }
+
+.logo img {
+	max-height: 100px;
+	border-style: solid;
+	border-color: white;
+	margin-top: 20px;
+}
+
+#Jet:hover {
+	background-color: #8225fa; 
+}
+
+ #HackDavis:hover {
+ 	background-color: #0fb1b9;
+ }
+
+ #Map-My-Customers:hover {
+ 	background-color: #00b4ff;
+ }
+
+ #Nutripad:hover {
+	background-color: #1B7EF3;
+}
+
+#Refleq:hover {
+ 	background-color: #ef4e3a;
+ }
+
+#Refleq:hover {
+ 	background-color: #ef4e3a;
+ }
+
+ #UClimate:hover {
+ 	background-color: #377cf0;
+ }
+
+
+@media (min-height: 750px) {
+	.landing-page {
+		height: 700px;
+	}
+	.col {
+		height: 350px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.landing-picture img {
+		margin-left: 0px;
+		}
+}
+
+@media (max-width: 1025px) {
+	#name {
+		margin-left: 30px;
+		}
+
+	.col {
+		width: 33%;
+	}
+}
+
+@media (max-width: 945px) {
+	.split-1 { 
+	    width: 60%; 
+	}
+
+	.split-2 {
+	    width: 40%; 
+		}
+}
+
+@media (max-width: 800px) {
+	.landing-picture img {
+		height: 400px;
+		margin-top: 100px;
+		}
+
+	#name {
+		font-size: 35px;
+		}
+
+	#description {
+		font-size: 20px;
+		}
+}
+
+@media (max-width: 685px) {
+	.landing-picture img {
+		height: 400px;
+		margin-top: 50px;
+		margin: 0px;
+		}
+
+	#name {
+		font-size: 40px;
+		margin-left: 50px;
+		}
+
+	#description {
+		font-size: 18px;
+		text-align: center;
+		}
+
+	.split-1 { 
+	    width: 100%; 
+	}
+
+	.split-2 {
+	    width: 100%; 
+	    height: 450px;
+		}
+
+	.col {
+		width: 50%;
+		}
+}
+
+@media (max-width:480px) {
+	.col {
+		width: 100%;
+		}
+
+	.landing-picture img {
+		height: 300px;
+		}
+
+	.split-1 {
+		height: 400px;
+	}
+
+	.split-2 {
+	    height: 350px;
+		}
+
+	#name {
+		font-size: 30px;
+		margin-left: 50px;
+		}
+
+	#description {
+		font-size: 15px;
+		}
+}
+
+@media (max-width: 360px) {
+	#name {
+		font-size: 25px;
+		}
+
+	#description {
+		font-size: 13px;
+		}
+
+	.col h1{
+		font-size: 15px;
+	}
+}

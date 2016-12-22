@@ -1,0 +1,116 @@
+
+body,html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: 'Kalam', cursive;
+    font-weight: 200;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    display: inline;
+    font-size: 75px;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typedEffect {
+    display: inline-block;
+}
+
+.landing-page {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 50px; 
+    text-align: center;
+    background-color: black;
+    background-size: cover;
+}
+
+.message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.message > h1 {
+    margin: 0;
+    font-size: 75px;
+}
+
+.break {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid white;
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media(max-width:767px) {
+
+    .message {
+        padding-bottom: 15%;
+    }
+
+    .message > h1 {
+        font-size: 45px;
+    }
+
+    .typed-cursor {
+        font-size: 45px;
+    }
+
+    ul.buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .break {
+        width: 100%;
+    }
+}
