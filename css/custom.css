@@ -12,8 +12,18 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+    font-family: 'Kalam', cursive;
+    font-weight: 200;
+}
+
 h3 {
     font-family: 'Kalam', cursive;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Kalam', sans-serif;
     font-weight: 200;
 }
 
@@ -114,4 +124,12 @@ body{
     .break {
         width: 100%;
     }
+}
+
+#container {
+    width: 65%;
+    height: 70%;
+    position: relative;
+    background-color:black;
+    color:black;
 }
