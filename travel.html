@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
+	  	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/custom.css" rel="stylesheet">
+	</head>
+     <body>
+		<div class="landing-page">
+			<div class="row">
+					<h3>Total Countries Visited - 17</h3>
+					<p>Countries Visited for Layover (3) - Germany, South Korea, United Arab Emirates</p>
+					<p>Countries Visited for One Day (5) - Austria, Czech Republic, Hungary, Malaysia, Poland</p>
+					<p>Countries Visited for a Weekend (2) - Qatar, Thailand</p>
+					<p>Countries Visited for a Week (5) - Argentina, Canada, China, Mexico, Russia</p>
+					<p>Countries Visited for over a Month (2) - India, United States</p>
+			</div>
+	    	<div class="container" id="container" style="width: 75%; height: 80%; position: relative; background-color:black; color:black;"></div>
+    	</div>
+    	<script>
+    		var dataset = {
+				  "USA": {"fillKey": "MONTH", "info":"Cities - San Jose, San Francisco, New York, Seattle, Los Angeles, San Diego, Las Vegas, Boston, Philadelphia, Pittsburgh, Baltimore, Washington DC, Orlando, Chicago, Phoenix, Providence, Nashville, St.Louis"},
+				  "IND": {"fillKey": "MONTH", "info":"Cities - Chennai, Pune"},
+				  "CAN": {"fillKey": "WEEK", "info":"Cities - Toronto, Vancouver"},
+				  "MEX": {"fillKey": "WEEK", "info":"Cities - Cancun, Puerto Vallarta"},
+				  "CHN": {"fillKey": "WEEK", "info":"Cities - Beijing, Shanghai, Xi'an"},
+				  "RUS": {"fillKey": "WEEK", "info":"Cities - Moscow, Saint Petersburg"},
+				  "ARG": {"fillKey": "WEEK", "info":"City - Buenos Airies"},
+				  "THA": {"fillKey": "WEEKEND", "info":"City - Bangkok"},
+				  "QAT": {"fillKey": "WEEKEND", "info":"City - Doha"},
+				  "MYS": {"fillKey": "ONEDAY", "info":"City - Kuala Lampur"},
+				  "AUT": {"fillKey": "ONEDAY", "info":"City - Vienna"},
+				  "POL": {"fillKey": "ONEDAY", "info":"City - Krakow"},
+				  "CZE": {"fillKey": "ONEDAY", "info":"City - Prague"},
+				  "HUN": {"fillKey": "ONEDAY", "info":"City - Budapest"},
+				  "DEU": {"fillKey": "LAYOVER", "info":"City - Frankfurt"},
+				  "ARE": {"fillKey": "LAYOVER", "info":"City - Dubai"},
+				  "KOR": {"fillKey": "LAYOVER", "info":"City - Seoul"},
+			}
+
+		    var map = new Datamap({
+		        element: document.getElementById('container'),
+		        // MONTH: '#36454F',
+		         //    WEEK: '#555D50',
+		         //    WEEKEND: '#3B3C36',
+		         //    ONEDAY: '#483C32',
+		         //    LAYOVER: '#123524',
+		         //    defaultFill: '#efefef'
+		        fills: {
+		        	MONTH: '#555D50',
+		            WEEK: '#555D50',
+		            WEEKEND: '#555D50',
+		            ONEDAY: '#555D50',
+		            LAYOVER: '#555D50',
+		            defaultFill: '#efefef'
+		        },
+		        data: dataset,
+		        geographyConfig: {
+		            borderColor: 'white',
+		            highlightBorderWidth: 2,
+		            highlightFillColor: function(geo) {
+		                return "black";
+		            },
+		            // only change border
+		            highlightBorderColor: 'white',
+		            // show desired information in tooltip
+		            popupTemplate: function(geo, data) {
+
+		                if (!data) { return ['<div class="hoverinfo">',
+		                    '<strong>', geo.properties.name, '</strong>',
+		                    '</div>'].join(''); }
+
+		                return ['<div class="hoverinfo">',
+		                    '<strong>', geo.properties.name, '</strong>',
+		                    '<br>', data.info,
+		                    '</div>'].join('');
+		            }
+		        }
+		    });
+		</script>
+	</body>
+</html>
