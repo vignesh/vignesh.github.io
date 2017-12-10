@@ -3,7 +3,7 @@
 	<head>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-		<script type="text/javascript" src="js/datamaps.world.min.js"></script>
+		<script type="text/javascript" src="js/datamaps.all.hires.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Kalam|Raleway:600|Roboto" rel="stylesheet">  
 	  	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<link href="css/custom.css" rel="stylesheet">
@@ -11,9 +11,9 @@
      <body>
 		<div class="landing-page">
 			<div class="row">
-					<h2>Total Countries Visited - 17</h2>
-					<p>Countries Visited for Layover (3) - Germany, South Korea, United Arab Emirates</p>
-					<p>Countries Visited for One Day (5) - Austria, Czech Republic, Hungary, Malaysia, Poland</p>
+					<h2>Total Countries Visited - 18</h2>
+					<p>Countries Visited for Layover (4) - Germany, Hong Kong, South Korea, United Arab Emirates</p>
+					<p>Countries Visited for One Day (5) - Austria, Czech Republic, Hungary, Singapore, Poland</p>
 					<p>Countries Visited for a Weekend (2) - Qatar, Thailand</p>
 					<p>Countries Visited for a Week (5) - Argentina, Canada, China, Mexico, Russia</p>
 					<p>Countries Visited for over a Month (2) - India, United States</p>
@@ -21,7 +21,6 @@
 	    	<div class="container" id="container"></div>
     	</div>
     	<script>
-    		//http://datamaps.github.io/scripts/0.4.4/datamaps.all.min.js -  Refnece for country codes
     		var dataset = {
 				  "USA": {"fillKey": "MONTH", "info":"Cities - Baltimore, Boston, Chicago, Las Vegas, Los Angeles, Nashville, New York, Orlando, Philadelphia,  Phoenix, Pittsburgh, Providence, San Diego, San Jose, San Francisco, Seattle, St.Louis,  Washington DC"},
 				  "IND": {"fillKey": "MONTH", "info":"Cities - Chennai, Pune"},
@@ -32,7 +31,7 @@
 				  "ARG": {"fillKey": "WEEK", "info":"City - Buenos Airies"},
 				  "THA": {"fillKey": "WEEKEND", "info":"City - Bangkok"},
 				  "QAT": {"fillKey": "WEEKEND", "info":"City - Doha"},
-				  "MYS": {"fillKey": "ONEDAY", "info":"City - Kuala Lampur"},
+				  "SGP": {"fillKey": "ONEDAY", "info":"City - Singapore"},
 				  "AUT": {"fillKey": "ONEDAY", "info":"City - Vienna"},
 				  "POL": {"fillKey": "ONEDAY", "info":"City - Krakow"},
 				  "CZE": {"fillKey": "ONEDAY", "info":"City - Prague"},
@@ -40,6 +39,7 @@
 				  "DEU": {"fillKey": "LAYOVER", "info":"City - Frankfurt"},
 				  "ARE": {"fillKey": "LAYOVER", "info":"City - Dubai"},
 				  "KOR": {"fillKey": "LAYOVER", "info":"City - Seoul"},
+				  "HGK": {"fillKey": "LAYOVER", "info":"City - Victoria"}
 			}
 
 		    var map = new Datamap({
