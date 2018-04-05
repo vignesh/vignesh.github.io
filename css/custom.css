@@ -27,6 +27,12 @@ p {
     font-weight: 200;
 }
 
+a {
+    font-family: 'Kalam', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
@@ -129,6 +135,13 @@ body{
 #container {
     width: 65%;
     height: 70%;
+    position: relative;
+    background-color:black;
+    color:black;
+}
+
+#bottom {
+    height: 10%;
     position: relative;
     background-color:black;
     color:black;
