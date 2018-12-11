@@ -17,39 +17,43 @@
      <body>
 		<div class="landing-page">
 			<div class="row">
-					<h2>Total Countries Visited - 21</h2>
-					<p>Countries Visited for Layover (5) - Germany, Hong Kong, South Korea, United Arab Emirates, United Kingdom</p>
-					<p>Countries Visited for One Day (5) - Czech Republic, Hungary, Singapore, Slovakia, Poland</p>
-					<p>Countries Visited for a Weekend (3) - Austria, Qatar, Thailand</p>
-					<p>Countries Visited for a Week (6) - Argentina, Canada, China, Mexico, Russia, Spain</p>
-					<p>Countries Visited for over a Month (2) - India, United States</p>
-					<p>Countries Visited - Argentina, Austria, Belgium, Canada, China, Czech Republic, Denmark, England, France, Germany, Hungary, Iceland, India, Ireland, Italy, Mexico, Netherlands, Poland, Qatar, Russia, Scotland, Singapore, Slovakia, Spain, Sweeden, Switzerland, Thailand, United Arab Emirates, United States</p>
+					<h2>Total Countries Visited - 28</h2>
+					<p>Argentina, Austria, Belgium, Canada, China, Czech Republic, Denmark</p>
+					<p>England, France, Germany, Hungary, Iceland, India, Ireland</p>
+					<p>Italy, Mexico, Netherlands, Poland, Qatar, Russia, Scotland</p>
+					<p>Singapore, Slovakia, Spain, Sweeden, Switzerland, Thailand, United States</p>
 			</div>
 	    	<div class="container" id="container"></div>
     	</div>
     	<script>
     		var dataset = {
-				  "USA": {"fillKey": "MONTH", "info":"Cities - Baltimore, Boston, Chicago, Detroit, Jersey City, Kauai, Las Vegas, Los Angeles, Maui, Nashville, New York, Oahu, Orlando, Philadelphia, Phoenix, Pittsburgh, Providence, San Diego, San Jose, San Francisco, Seattle, St.Louis, Washington DC"},
-				  "IND": {"fillKey": "MONTH", "info":"Cities - Coimbatore, Chennai, Pune, Tiruchirappalli"},
-				  "CAN": {"fillKey": "WEEK", "info":"Cities - Toronto, Vancouver"},
-				  "MEX": {"fillKey": "WEEK", "info":"Cities - Cancun, Puerto Vallarta"},
-				  "CHN": {"fillKey": "WEEK", "info":"Cities - Beijing, Shanghai, Xi'an"},
-				  "RUS": {"fillKey": "WEEK", "info":"Cities - Moscow, Saint Petersburg"},
-				  "ARG": {"fillKey": "WEEK", "info":"City - Buenos Airies"},
-				  "ESP": {"fillKey": "WEEK", "info":"City - Barcelona, Madrid, Toledo"},
-				  "THA": {"fillKey": "WEEKEND", "info":"City - Bangkok"},
-				  "QAT": {"fillKey": "WEEKEND", "info":"City - Doha"},
-				  "AUT": {"fillKey": "WEEKEND", "info":"Cities - Salzburg, Vienna"},
-				  "DEU": {"fillKey": "WEEKEND", "info":"City - Berlin"},
-				  "SGP": {"fillKey": "ONEDAY", "info":"City - Singapore"},
-				  "SVK": {"fillKey": "ONEDAY", "info":"City - Bratislava"},
-				  "POL": {"fillKey": "ONEDAY", "info":"City - Krakow"},
-				  "CZE": {"fillKey": "ONEDAY", "info":"City - Prague"},
-				  "HUN": {"fillKey": "ONEDAY", "info":"City - Budapest"},
-				  "ARE": {"fillKey": "LAYOVER", "info":"City - Abu Dhabi, Dubai"},
-				  "KOR": {"fillKey": "LAYOVER", "info":"City - Seoul"},
-				  "HGK": {"fillKey": "LAYOVER", "info":"City - Victoria"},
-				  "GBR": {"fillKey": "LAYOVER", "info":"City - London"}
+				  "USA": {"fillKey": "MONTH", "info":"Baltimore, Boston, Chicago, Detroit, Jersey City, Kauai, Las Vegas, Los Angeles, Maui, Nashville, New York, Oahu, Orlando, Philadelphia, Phoenix, Pittsburgh, Providence, San Diego, San Jose, San Francisco, Seattle, St.Louis, Washington DC"},
+				  "IND": {"fillKey": "MONTH", "info":"Coimbatore, Chennai, Pune, Tiruchirappalli"},
+				  "CAN": {"fillKey": "WEEK", "info":"Toronto, Vancouver"},
+				  "MEX": {"fillKey": "WEEK", "info":"Cancun, Puerto Vallarta"},
+				  "CHN": {"fillKey": "WEEK", "info":"Beijing, Shanghai, Xi'an"},
+				  "RUS": {"fillKey": "WEEK", "info":"Moscow, Saint Petersburg"},
+				  "ARG": {"fillKey": "WEEK", "info":"Buenos Airies"},
+				  "ESP": {"fillKey": "WEEK", "info":"Barcelona, Madrid, Toledo"},
+				  "GBR": {"fillKey": "WEEK", "info":"Bath, Edinburgh, London"},
+				  "THA": {"fillKey": "WEEKEND", "info":"Bangkok"},
+				  "QAT": {"fillKey": "WEEKEND", "info":"Doha"},
+				  "AUT": {"fillKey": "WEEKEND", "info":"Salzburg, Vienna"},
+				  "DEU": {"fillKey": "WEEKEND", "info":"Berlin"},
+				  "BEL": {"fillKey": "WEEKEND", "info":"Bruge, Brussels"},
+				  "ISL": {"fillKey": "WEEKEND", "info":"Reykjavik"},
+				  "DNK": {"fillKey": "WEEKEND", "info":"Copenhagen"},
+				  "FRA": {"fillKey": "WEEKEND", "info":"Paris"},
+				  "IRL": {"fillKey": "WEEKEND", "info":"Dublin"},
+				  "NLD": {"fillKey": "WEEKEND", "info":"Amsterdamn"},
+				  "SWE": {"fillKey": "WEEKEND", "info":"Stockholm"},
+				  "CHE": {"fillKey": "WEEKEND", "info":"Bern, Interlaken"},
+				  "ITA": {"fillKey": "WEEKEND", "info":"Como, Milan"},
+				  "SGP": {"fillKey": "WEEKEND", "info":"Singapore"},
+				  "SVK": {"fillKey": "ONEDAY", "info":"Bratislava"},
+				  "POL": {"fillKey": "ONEDAY", "info":"Krakow"},
+				  "CZE": {"fillKey": "ONEDAY", "info":"Prague"},
+				  "HUN": {"fillKey": "ONEDAY", "info":"Budapest"}
 			}
 
 		    var map = new Datamap({
